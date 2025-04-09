@@ -7,10 +7,10 @@
 
 ## Sisukord
 
-1. [Sissejuhatus (projekti eesmärk)](#sissejuhatus)
-2. [Tehniline osa. Mis oli kasutatud projekti koostamisel? Koodi kirjutamisel?](#tehniline-osa)
-3. [Kasutusjuhend](#kasutusjuhend)
-4. [Kokkuvõte. Kas on õnnestunud teha, mis oli planeeritud? Mis jäi tegemata?](#kokkuvõte)
+1. Sissejuhatus (projekti eesmärk)(#sissejuhatus)
+2. Tehniline osa. Mis oli kasutatud projekti koostamisel? Koodi kirjutamisel?(#tehniline-osa)
+3. Kasutusjuhend(#kasutusjuhend)
+4. Kokkuvõte. Kas on õnnestunud teha, mis oli planeeritud? Mis jäi tegemata?(#kokkuvõte)
 
 ---
 
