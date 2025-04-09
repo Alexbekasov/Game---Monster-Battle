@@ -6,6 +6,28 @@ import os
 player = None
 SAVE_FILE = "savefile.txt"
 
+def main(loaded_player=None):
+    global player
+    if loaded_player:
+        player = loaded_player
+    else:
+        choose_character()
+
+    print(f"\nWelcome, {player.name} the Hero!")
+
+    while True:
+        print("\n--- New Encounter ---")
+        monster = Monster(player.level)
+        print(f"A wild {monster.name} appears!")
+
+        battle(monster)
+        save_game(player)
+
+        again = input("Fight another? (y/n): ").lower()
+        if again != "y":
+            print("Thanks for playing!")
+            break
+
 def save_game(player):
     lines = []
     found = False
@@ -123,7 +145,6 @@ def choose_character():
         else:
             print("Invalid option.")
 
-
 def battle(monster):
     global player
     while player.is_alive() and monster.is_alive():
@@ -159,22 +180,7 @@ def battle(monster):
         print("You died! Game Over.")
         exit()
 
-def main():
-    choose_character()
-    print(f"\nWelcome, {player.name} the Hero!")
-
-    while True:
-        print("\n--- New Encounter ---")
-        monster = Monster(player.level)
-        print(f"A wild {monster.name} appears!")
-
-        battle(monster)
-        save_game(player)
-
-        again = input("Fight another? (y/n): ").lower()
-        if again != "y":
-            print("Thanks for playing!")
-            break
-
 if __name__ == "__main__":
-    main()
+    # Start GUI first
+    from gui_menu import gui_menu
+    gui_menu()
