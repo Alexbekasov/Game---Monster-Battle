@@ -1,1 +1,2 @@
 Ricardo The Mighty,100,20,1,0
+Farmer,100,20,1,0
